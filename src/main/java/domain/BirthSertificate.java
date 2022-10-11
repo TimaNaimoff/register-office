@@ -1,21 +1,36 @@
 package domain;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
-public class BithSertificate {
-    private Long bithCertificateId;
+
+@Table(name="ro_birth_certificate")
+@Entity
+public class BirthSertificate {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="birth_certificate_id")
+    private Long birthCertificateId;
+    @Column(name="number_certificate")
     private String number;
+    @Column(name="issue_date")
     private LocalDate issueDate;
+    @OneToOne(cascade={CascadeType.REFRESH},fetch = FetchType.LAZY)
+    @JoinColumn(name="person_id")
     private Person person;
+    @ManyToOne(cascade={CascadeType.REFRESH},fetch = FetchType.LAZY)
+    @JoinColumn(name="father_id")
     private PersonMale father;
+    @ManyToOne(cascade={CascadeType.REFRESH},fetch=FetchType.LAZY)
+    @JoinColumn(name="mother_id")
     private PersonFemale mother;
 
-    public Long getBithCertificateId() {
-        return bithCertificateId;
+    public Long getBirthCertificateId() {
+        return birthCertificateId;
     }
 
-    public void setBithCertificateId(Long bithCertificateId) {
-        this.bithCertificateId = bithCertificateId;
+    public void setBirthCertificateId(Long birthCertificateId) {
+        this.birthCertificateId = birthCertificateId;
     }
 
     public String getNumber() {

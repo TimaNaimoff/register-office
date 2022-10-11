@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c3e972c-09be-438f-a1f7-69f66a2d0f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/BithSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/BirthSertificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/MarriageSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/MarriageSertificate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/PersonFemale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PersonFemale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/PersonMale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/PersonMale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/register_office.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register_office.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/manager/PersonManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/register_office.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/register_office.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

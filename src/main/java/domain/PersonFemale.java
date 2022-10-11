@@ -1,37 +1,40 @@
 package domain;
 
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.List;
 
 @DiscriminatorValue(value="1")
 @Entity
 public class PersonFemale extends Person{
+    @OneToMany(cascade = {CascadeType.REFRESH},fetch= FetchType.LAZY,
+            mappedBy = "wife")
 
-//    private List<MarriageSertificate> marriageSertificates;
-//    private List<BithSertificate>bithSertificates;
-//
-//    public List<MarriageSertificate> getSertificates() {
-//        return marriageSertificates;
-//    }
-//
-//    public void setSertificates(List<MarriageSertificate> marriageSertificates) {
-//        this.marriageSertificates = marriageSertificates;
-//    }
-//
-//    public List<MarriageSertificate> getMarriageSertificates() {
-//        return marriageSertificates;
-//    }
-//
-//    public void setMarriageSertificates(List<MarriageSertificate> marriageSertificates) {
-//        this.marriageSertificates = marriageSertificates;
-//    }
-//
-//    public List<BithSertificate> getBithSertificates() {
-//        return bithSertificates;
-//    }
-//
-//    public void setBithSertificates(List<BithSertificate> bithSertificates) {
-//        this.bithSertificates = bithSertificates;
-//    }
+    private List<MarriageSertificate> marriageSertificates;
+    @OneToMany(cascade = {CascadeType.REFRESH},fetch= FetchType.LAZY,
+            mappedBy = "mother")
+    private List<BirthSertificate>bithSertificates;
+
+    public List<MarriageSertificate> getSertificates() {
+        return marriageSertificates;
+    }
+
+    public void setSertificates(List<MarriageSertificate> marriageSertificates) {
+        this.marriageSertificates = marriageSertificates;
+    }
+
+    public List<MarriageSertificate> getMarriageSertificates() {
+        return marriageSertificates;
+    }
+
+    public void setMarriageSertificates(List<MarriageSertificate> marriageSertificates) {
+        this.marriageSertificates = marriageSertificates;
+    }
+
+    public List<BirthSertificate> getBithSertificates() {
+        return bithSertificates;
+    }
+
+    public void setBithSertificates(List<BirthSertificate> bithSertificates) {
+        this.bithSertificates = bithSertificates;
+    }
 }

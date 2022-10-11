@@ -19,8 +19,10 @@ public abstract class Person {
     private String lastName;
     @Column(name="patronymic")
     private String patronymic;
-    @Column(name="date_of_bith")
+    @Column(name="date_of_birth")
     private LocalDate dateOfBith;
+    @OneToOne(cascade ={CascadeType.REFRESH},fetch=FetchType.LAZY,mappedBy = "person")
+    private BirthSertificate birthSertificate;
     @OneToMany(cascade={CascadeType.REFRESH},fetch = FetchType.LAZY,mappedBy="person")
     private List<Passport> passports;
 
@@ -70,5 +72,13 @@ public abstract class Person {
 
     public void setDateOfBith(LocalDate dateOfBith) {
         this.dateOfBith = dateOfBith;
+    }
+
+    public BirthSertificate getBirthSertificate() {
+        return birthSertificate;
+    }
+
+    public void setBirthSertificate(BirthSertificate birthSertificate) {
+        this.birthSertificate = birthSertificate;
     }
 }
