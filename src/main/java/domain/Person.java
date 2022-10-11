@@ -6,6 +6,8 @@ import java.util.List;
 
 @Entity
 @Table(name="ro_person")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="sex",discriminatorType = DiscriminatorType.INTEGER)
 public abstract class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
