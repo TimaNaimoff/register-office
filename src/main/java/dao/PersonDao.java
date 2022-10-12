@@ -2,9 +2,7 @@ package dao;
 
 import domain.Person;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import java.util.List;
 
 
@@ -14,9 +12,12 @@ public class PersonDao {
     public PersonDao(){
         EntityManagerFactory factory= Persistence.createEntityManagerFactory("persistence");
         entityManager=factory.createEntityManager();
+
     }
     public List<Person> findPersons(){
-        return entityManager.createQuery("SELECT p FROM Person p").getResultList();
+        Query namedQuery=entityManager.createNamedQuery("Person.findPersons");
+        namedQuery.setParameter("personId",1L);
+        return namedQuery.getResultList();
 
     }
 }

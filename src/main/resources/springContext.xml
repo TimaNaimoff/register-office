@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/shema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:shemaLocation="http://www.springframework.org/schema/beans
+              https://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="dao" class="dao.MarriageDao">
+           <property name="test" value="SIMPLE"/>
+       </bean>
+       <bean id="manager" class="edu.javacourse.register.manager.MarriageManager">
+           <property name="marriageDao" ref="dao"/>
+       </bean>
+       <bean id="controller" class="rest.MarriageController">
+           <property name="marriageManager" ref ="manager"/>
+       </bean>
+
+
+</beans>
