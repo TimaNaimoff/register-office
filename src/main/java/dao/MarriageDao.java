@@ -5,17 +5,26 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import view.MarriageRequest;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+import java.util.List;
 
 public class MarriageDao {
      private static final Logger LOGGER = LoggerFactory.
              getLogger(MarriageDao.class);
      private EntityManager entityManager;
-     private String test;
+    //MarriageRequest marriageRequest
+     public MarriageDao(){
+         EntityManagerFactory factory= Persistence.createEntityManagerFactory("persistence");
+         entityManager=factory.createEntityManager();
 
-     public MarriageSertificate findMarriageCertificate(MarriageRequest marriageRequest){
-         LOGGER.info("findMarriageCertificate is called: {}",test);
-         new MarriageSertificate();
-         return null;
+     }
+     public List<MarriageSertificate> findMarriageCertificate() {
+         LOGGER.info("findMarriageCertificate is called: ");
+          Query namedQuery=entityManager.createNamedQuery("MarriageSertificate.findMarriageCertificate");
+          namedQuery.setParameter("certificate_status",true);
+          return namedQuery.getResultList();
      }
 
     public EntityManager getEntityManager() {
@@ -26,11 +35,4 @@ public class MarriageDao {
         this.entityManager = entityManager;
     }
 
-    public String getTest() {
-        return test;
-    }
-
-    public void setTest(String text) {
-        this.test = test;
-    }
 }

@@ -14,7 +14,7 @@ public class MarriageController {
     public MarriageResponse findMarriageCertificate(MarriageRequest marriageRequest){
         LOGGER.info("findMarriageCertificate called");
 
-        return marriageManager.findMarriageCertificate(marriageRequest);
+        return marriageManager.findMarriageCertificate();//marriageRequest);
     }
 
     public void setMarriageManager(MarriageManager marriageManager) {

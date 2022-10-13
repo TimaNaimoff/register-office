@@ -59,3 +59,6 @@ CREATE TABLE ro_marriage_certificate(
     FOREIGN KEY(wife_id)REFERENCES ro_person(person_id)ON DELETE RESTRICT
 
 );
+
+INSERT INTO ro_marriage_certificate(mr_certificate_number,mr_issue_date,husband_id,wife_id,certificate_status,end_date)
+VALUES(1,'2020-09-10',2,1,true,'2024-12-12');

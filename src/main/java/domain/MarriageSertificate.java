@@ -5,6 +5,11 @@ import java.time.LocalDate;
 
 @Table(name="ro_marriage_certificate")
 @Entity
+@NamedQueries({
+        @NamedQuery(name="MarriageSertificate.findMarriageCertificate",query="SELECT mr FROM MarriageSertificate mr INNER JOIN " +
+                " mr.husband mrh INNER JOIN mr.wife WHERE certificate_status=:certificate_status")
+
+})
 public class MarriageSertificate {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)

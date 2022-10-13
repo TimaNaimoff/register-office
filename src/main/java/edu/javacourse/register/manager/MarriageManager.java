@@ -8,14 +8,16 @@ import rest.MarriageController;
 import view.MarriageRequest;
 import view.MarriageResponse;
 
+import java.util.List;
+
 public class MarriageManager {
     private  MarriageDao marriageDao;
     private static final Logger LOGGER = LoggerFactory.
             getLogger(MarriageManager.class);
 
-    public MarriageResponse findMarriageCertificate(MarriageRequest request){
+    public MarriageResponse findMarriageCertificate(){
             LOGGER.info("findMarriageCertificate is called");
-        MarriageSertificate sertificate=marriageDao.findMarriageCertificate(request);
+        List<MarriageSertificate> sertificate=marriageDao.findMarriageCertificate();
         return new MarriageResponse();
     }
 
