@@ -1,13 +1,11 @@
 package dao;
 
-import domain.Person;
-import domain.PersonFemale;
-import domain.PersonMale;
+import edu.javacourse.register.dao.MarriageDao;
+import edu.javacourse.register.dao.PersonDao;
+import edu.javacourse.register.domain.Person;
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class PersonDaoTest {
     @Test

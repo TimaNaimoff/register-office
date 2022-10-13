@@ -1,11 +1,10 @@
 package dao;
 
-import domain.MarriageSertificate;
+import edu.javacourse.register.domain.MarriageSertificate;
+import edu.javacourse.register.dao.MarriageDao;
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class MarriageDaoTest {
     @Test

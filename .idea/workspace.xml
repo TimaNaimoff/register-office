@@ -5,20 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c3e972c-09be-438f-a1f7-69f66a2d0f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MarriageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MarriageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/MarriageSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/MarriageSertificate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/manager/MarriageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/manager/MarriageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/MarriageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/MarriageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/register_office.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register_office.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MarriageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/MarriageDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/BirthSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/BirthSertificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/MarriageSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/MarriageSertificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Passport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PersonFemale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/PersonFemale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/PersonMale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/PersonMale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/manager/MarriageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/business/MarriageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/MarriageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/rest/MarriageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MarriageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/MarriageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MarriageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/MarriageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/MarriageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/MarriageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/manager/MarriageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/manager/MarriageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/MarriageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MarriageRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/MarriageResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/MarriageResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/MarriageDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/MarriageDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/MarriageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/PersonDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/BirthSertificate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/MarriageSertificate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Passport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/PersonFemale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/PersonMale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/manager/MarriageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rest/MarriageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MarriageRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/MarriageResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/Starter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/MarriageDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/MarriageDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/PersonDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/PersonDaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,13 +95,26 @@
       <recent name="dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarriageDaoTest">
+  <component name="RunManager" selected="Application.Starter (1)">
     <configuration name="PersonManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.javacourse.register.manager.PersonManager" />
       <module name="register-office" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.javacourse.register.manager.*" />
+          <option name="PATTERN" value="edu.javacourse.register.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.javacourse.register.view.Starter" />
+      <module name="register-office" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.javacourse.register.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,6 +167,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Starter (1)" />
         <item itemvalue="JUnit.MarriageDaoTest" />
         <item itemvalue="Application.Starter" />
         <item itemvalue="JUnit.PersonDaoTest" />
