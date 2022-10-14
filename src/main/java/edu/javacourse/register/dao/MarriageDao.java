@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 
@@ -19,15 +16,13 @@ import java.util.List;
 public class MarriageDao {
      private static final Logger LOGGER = LoggerFactory.
              getLogger(MarriageDao.class);
+
+     @PersistenceContext
      private EntityManager entityManager;
      //MarriageRequest marriageRequest
      @Value("${test.value}")
      private String text;
-     public MarriageDao(){
-         EntityManagerFactory factory= Persistence.createEntityManagerFactory("persistence");
-         entityManager=factory.createEntityManager();
 
-     }
      public List<MarriageSertificate> findMarriageCertificate() {
          LOGGER.info("findMarriageCertificate is called: "+text);
           Query namedQuery=entityManager.createNamedQuery("MarriageSertificate.findMarriageCertificate");

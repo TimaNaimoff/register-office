@@ -12,28 +12,23 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-@Service
+@Service("marriageService")
 public class MarriageManager {
-    private MarriageDao marriageDao;
+
     private static final Logger LOGGER = LoggerFactory.
             getLogger(MarriageManager.class);
-   // @Autowired
+
+    @Autowired
+    private MarriageDao marriageDao;
+    @Autowired
     private PersonDao personDao;
 
-   // @Autowired
-    public MarriageManager(PersonDao personDao){
-        this.personDao=personDao;
-    }
 
     public MarriageResponse findMarriageCertificate(){
             LOGGER.info("findMarriageCertificate is called");
         List<MarriageSertificate> sertificate=marriageDao.findMarriageCertificate();
+        personDao.findPersons();
         return new MarriageResponse();
-    }
-
-    @Autowired
-    public void setMarriageDao(MarriageDao marriageDao) {
-        this.marriageDao=marriageDao;
     }
 
 
