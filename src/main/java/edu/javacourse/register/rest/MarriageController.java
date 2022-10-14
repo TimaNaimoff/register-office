@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
 
 @Service("controller")
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
@@ -22,6 +24,7 @@ public class MarriageController {
     @Qualifier("marriageService")
     private MarriageManager marriageManager;
 
+    @Transactional
     public MarriageResponse findMarriageCertificate(MarriageRequest marriageRequest){
         LOGGER.info("findMarriageCertificate called");
 

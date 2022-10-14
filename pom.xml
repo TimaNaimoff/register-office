@@ -24,7 +24,9 @@
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <slf4j.version>1.5.6</slf4j.version>
+        <hibernate.version>5.4.3.Final</hibernate.version>
         <spring.version>5.1.4.RELEASE</spring.version>
+        <spring-jpa.version>2.7.1</spring-jpa.version>
     </properties>
     <dependencies>
         <dependency>
@@ -37,7 +39,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.4.3.Final</version>
+            <version>${hibernate.version}</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -70,9 +72,14 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-jpa.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.4.3.Final</version>
+            <version>${hibernate.version}</version>
         </dependency>
 
     </dependencies>
