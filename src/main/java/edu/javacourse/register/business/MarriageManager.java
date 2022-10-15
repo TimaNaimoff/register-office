@@ -31,22 +31,32 @@ public class MarriageManager {
     @Transactional
     public MarriageResponse findMarriageCertificate(){
             LOGGER.info("findMarriageCertificate is called");
-       //List<MarriageSertificate> sertificate=marriageDao.findMarriageCertificate();
+        //List<MarriageSertificate> sertificate=marriageDao.findMarriageCertificate();
         personDao.addPerson(getPerson( 1));
         personDao.addPerson(getPerson( 2));
         MarriageSertificate mrs=getMarriageSertificate();
         marriageDao.saveAndFlush(mrs);
-        marriageDao.findAll();
-        marriageDao.findById(1L);
-        return new MarriageResponse();
+//        marriageDao.findAll();
+//        marriageDao.findById(1L);
+          List<MarriageSertificate>list=marriageDao.findByNumber("12345");
+          list.forEach(m->LOGGER.info("MC:{}",m.getMarriageCertificateId()));
+          LOGGER.info("-------->");
+          List<MarriageSertificate>list2=marriageDao.findByNumb("12345");
+          list2.forEach(m->LOGGER.info("MC:{}",m.getMarriageCertificateId()));
+
+          List<MarriageSertificate>list3=marriageDao.findSomething("908");
+          list3.forEach(m->LOGGER.info("MC:{}",m.getMarriageCertificateId()));
+          LOGGER.info("-------->");
+          return new MarriageResponse();
     }
 
     private MarriageSertificate getMarriageSertificate(){
         MarriageSertificate sertificate=new MarriageSertificate();
         sertificate.setIssueDate(LocalDate.now());
-        sertificate.setNumber("12345");
+        sertificate.setNumber("908");
         sertificate.setActive(true);
         List<Person>persons=personDao.findPersons();
+
         persons.forEach(p->{
            if (p instanceof PersonMale) sertificate.setHusband((PersonMale) p);
            else sertificate.setWife((PersonFemale) p);
