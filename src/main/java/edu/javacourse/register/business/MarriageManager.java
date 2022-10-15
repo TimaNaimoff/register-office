@@ -32,12 +32,12 @@ public class MarriageManager {
     public MarriageResponse findMarriageCertificate(){
             LOGGER.info("findMarriageCertificate is called");
        //List<MarriageSertificate> sertificate=marriageDao.findMarriageCertificate();
-
         personDao.addPerson(getPerson( 1));
         personDao.addPerson(getPerson( 2));
         MarriageSertificate mrs=getMarriageSertificate();
         marriageDao.saveAndFlush(mrs);
         marriageDao.findAll();
+        marriageDao.findById(1L);
         return new MarriageResponse();
     }
 

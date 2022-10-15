@@ -8,17 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/business/MarriageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/business/MarriageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/MarriageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/MarriageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/PersonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/rest/MarriageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/rest/MarriageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/register_office.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register_office.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/MarriageDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/MarriageDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/business/MarriageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/business/MarriageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/MarriageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/MarriageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/PersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/PersonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/rest/MarriageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/rest/MarriageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/register_office.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/register_office.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,5 +166,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/Starter.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -46,12 +46,13 @@ CREATE TABLE ro_marriage_certificate(
     husband_id integer not null,
     wife_id integer not null,
     certificate_status boolean DEFAULT false,
-    end_date date not null,
+    end_date date ,
     PRIMARY KEY(marriage_id),
     FOREIGN KEY (husband_id)REFERENCES ro_person(person_id)ON DELETE RESTRICT,
     FOREIGN KEY(wife_id)REFERENCES ro_person(person_id)ON DELETE RESTRICT
 
 );
+
 INSERT INTO ro_person(sex,first_name,last_name,patronymic,date_of_birth)VALUES
 (1,'Kimaria','Selengard','Cherrow','1999-06-25'),(2,'Argines','Mappickar','Lodan','1978-04-04'),
 (2,'Madris','Treikar','Erlackon','1999-09-19');
