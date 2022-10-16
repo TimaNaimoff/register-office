@@ -36,8 +36,6 @@ public class MarriageManager {
         personDao.addPerson(getPerson( 2));
         MarriageSertificate mrs=getMarriageSertificate();
         marriageDao.saveAndFlush(mrs);
-//        marriageDao.findAll();
-//        marriageDao.findById(1L);
           List<MarriageSertificate>list=marriageDao.findByNumber("12345");
           list.forEach(m->LOGGER.info("MC:{}",m.getMarriageCertificateId()));
           LOGGER.info("-------->");

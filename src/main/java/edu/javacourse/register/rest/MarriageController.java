@@ -13,10 +13,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 
 @Service("controller")
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+@Path("/mr")
 public class MarriageController {
     private static final Logger LOGGER = LoggerFactory.
             getLogger(MarriageController.class);
@@ -25,10 +29,12 @@ public class MarriageController {
     private MarriageManager marriageManager;
 
     @Transactional
-    public MarriageResponse findMarriageCertificate(MarriageRequest marriageRequest){
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public MarriageResponse findMarriageCertificate(){
         LOGGER.info("findMarriageCertificate called");
 
-        return marriageManager.findMarriageCertificate();//marriageRequest);
+        return marriageManager.findMarriageCertificate();
     }
 
     public void setMarriageManager(MarriageManager marriageManager) {

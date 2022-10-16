@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="dao.PersonDaoTest" time="12.613" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="dao.PersonDaoTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,5 +60,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="dao.PersonDaoTest" name="findPersons" time="12.613"/>
+  <testcase classname="dao.PersonDaoTest" name="findPersons" time="0"/>
 </testsuite>

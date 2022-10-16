@@ -1,0 +1,14 @@
+edu\javacourse\register\view\MarriageRequest.class
+edu\javacourse\register\domain\BirthSertificate.class
+edu\javacourse\register\domain\PersonFemale.class
+edu\javacourse\register\dao\PersonDao.class
+edu\javacourse\register\view\MarriageResponse.class
+edu\javacourse\register\domain\Person.class
+edu\javacourse\register\business\MarriageManager.class
+edu\javacourse\register\view\Starter.class
+edu\javacourse\register\domain\PersonMale.class
+edu\javacourse\register\domain\Passport.class
+edu\javacourse\register\domain\MarriageSertificate.class
+edu\javacourse\register\config\MarriageConfig.class
+edu\javacourse\register\dao\MarriageDao.class
+edu\javacourse\register\rest\MarriageController.class

@@ -6,12 +6,39 @@
   <component name="ChangeListManager">
     <list default="true" id="1c3e972c-09be-438f-a1f7-69f66a2d0f55" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/business/MarriageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/business/MarriageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/MarriageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/dao/MarriageDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/MarriageSertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/domain/MarriageSertificate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/business/MarriageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/business/MarriageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/MarriageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/MarriageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/MarriageSertificate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/MarriageSertificate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/rest/MarriageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/rest/MarriageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/MarriageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/MarriageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/register/view/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/PersonDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/business/MarriageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/config/MarriageConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/MarriageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/dao/PersonDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/BirthSertificate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/MarriageSertificate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/Passport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/PersonFemale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/domain/PersonMale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/rest/MarriageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/view/MarriageRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/view/MarriageResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/register/view/Starter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/register.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/register_office.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/register-office-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.PersonDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.PersonDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/MarriageDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/PersonDaoTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
